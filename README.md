@@ -18,17 +18,17 @@ To get a local copy of this project up and running, follow these steps:
 
 ## Clone the repository to your local machine:
 
-shell
+
 Copy code
 git clone <https://github.com/bellaloc/Notetaker>
 Install the project dependencies:
 
-shell
+
 Copy code
 npm install
 Start the Express.js server:
 
-shell
+
 Copy code
 npm start
 Open your web browser and navigate to http://localhost:3000 to use the Note Taker application.
