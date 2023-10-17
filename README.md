@@ -39,9 +39,9 @@ Click on the "Notes" link to access the notes page.
 To create a new note, enter a title and note text, then click the "Save Note" button.
 To view an existing note, click on the note in the list.
 To delete a note, click the trash icon next to the note in the list.
-Screenshots
-Screenshot 1
-Screenshot 2
+
+## screenshots
+C:\Users\hart_\bootcamp\homework\NoteTaker\images\note taker port 3000.PNG
 
 ## Technologies Used
 Node.js

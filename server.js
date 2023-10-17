@@ -5,17 +5,13 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
-require('./routes/apiRoutes')(app);
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
 
-app.get('/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/notes.html'));
-});
-
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/index.html'));
-});
+apiRoutes(app);
+htmlRoutes(app);
 
 app.listen(PORT, () => {
   console.log(`Server is listening on http://localhost:${PORT}`);

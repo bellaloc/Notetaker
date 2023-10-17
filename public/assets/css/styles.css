@@ -1,12 +1,8 @@
-html,
+/* Default styles */
 body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-.save-note, .new-note, .clear-btn {
-  display: none;
 }
 
 .icons {
@@ -24,16 +20,19 @@ body {
   border: none;
 }
 
-.note-textarea {
-  resize: none;
-  height: calc(100% - 63px);
-  padding-top: 15px;
-}
-
 .note-title {
   height: 50px;
   margin-top: 13px;
-  font-size: 3rem;
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.note-textarea {
+  resize: none;
+  height: calc(100% - 110px);
+  padding-top: 15px;
+  width: 100%;
 }
 
 .note-title:read-only,
@@ -75,4 +74,14 @@ body {
   border-right: none;
   padding: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .note-title {
+    font-size: 1.5rem;
+  }
+
+  .note-textarea {
+    height: calc(100% - 130px);
+  }
 }
